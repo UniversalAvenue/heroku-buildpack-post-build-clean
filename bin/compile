@@ -12,6 +12,8 @@ fi
 
 cd ${BUILD_DIR}
 
+du -hd 1 | sort -h
+
 if [[ ! -f "${CLEAN_FILES}" ]]; then
   echo "Could not find .slug-post-clean file - exiting"
   exit 1
